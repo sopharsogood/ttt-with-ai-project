@@ -65,8 +65,10 @@ class Game
     end
 
     def play
+        self.board.display
         until self.over?
             self.turn
+            self.board.display
         end
         puts "Cat's Game!" if self.draw?
         puts "Congratulations #{self.winner}!" if self.won?
