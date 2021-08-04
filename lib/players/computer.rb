@@ -36,7 +36,7 @@ module Players
         end
 
         def think_of_a_good_index(board)
-            puts "Thinking carefully where to move..."
+            puts "Thinking carefully about where to move..."
 
             if self.intelligence >= 2
                 @@numerical_board = self.update_numerical_board(board)
